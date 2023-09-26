@@ -73,6 +73,22 @@ function mostrarFormulario(numeroFormulario) {
   }
 }
 
+function mostrarWebMaster(){
+  ocultarElemento();
+
+  var webmaster = document.getElementById("webmaster");
+  if (webmaster) {
+    webmaster.style.display = "block";
+    elementoActual = webmaster;
+  }
+  // Cambia la propiedad position del footer a 'static' para que no sea fijo
+  var footer = document.getElementById("footer");
+  if (footer) {
+    footer.style.position = "static";
+  }
+
+}
+
 // Función para ocultar el elemento actual
 function ocultarElemento() {
   if (elementoActual) {
