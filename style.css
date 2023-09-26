@@ -1,0 +1,217 @@
+/* Estilos de la página */
+body {
+  font-family: "Metrophobic", Arial, serif;
+  font-weight: 400;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7; /* Color de fondo principal */
+}
+
+header,
+section {
+  text-align: center;
+  background-color: #ffffff; /* Color de fondo de encabezado y sección */
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  align-self: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilos para las imágenes en el header */
+.imagen-izquierda {
+  width: 100px; 
+  height: auto; 
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.imagen-derecha {
+  width: 100px; 
+  height: auto; 
+  margin-left: 10px; /* Espacio entre la imagen y el texto */
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  color: #333; /* Color de texto secundario */
+  margin: 0;
+}
+
+/* Estilos para la barra de navegación horizontal (top) */
+.navbar-horizontal {
+  background-color: #0073e6; /* Color de fondo de la barra de navegación horizontal */
+  color: white; /* Color de texto en la barra de navegación horizontal */
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.navbar-horizontal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-horizontal li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar-horizontal a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave de color de fondo y texto */
+}
+
+/* Cambia el color de fondo y el color del texto al pasar el cursor sobre el enlace */
+.navbar-horizontal a:hover {
+  background-color: #0059b3; /* Nuevo color de fondo al pasar el cursor */
+  color: #f7f7f7; /* Nuevo color del texto al pasar el cursor */
+}
+
+/* Estilos para la barra de navegación vertical (left) */
+.navbar-vertical {
+  background-color: #f7f7f7; /* Color de fondo de la barra de navegación vertical */
+  padding: 20px;
+  font-size: 25px;
+  width: 170px;
+  position: absolute;
+  left: 0;
+  height: max-content;
+  overflow-y: auto;
+}
+
+.navbar-vertical ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-vertical li {
+  margin-bottom: 10px;
+}
+
+.navbar-vertical a {
+  text-decoration: none;
+  color: #333; /* Color de texto en la barra de navegación vertical */
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Agrega una animación de escalado al pasar el cursor sobre el enlace */
+.navbar-vertical a:hover {
+  background-color: #e0e0e0; /* Nuevo color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Escala el botón al 105% del tamaño original */
+}
+
+/* Estilos para el contenido principal */
+main {
+  margin-left: 220px; /* Ajusta la distancia del contenido principal desde el menú lateral vertical */
+  padding: 20px;
+  height: 100%;
+  flex-grow: 1; /* Hace que el contenido principal crezca para llenar el espacio disponible */
+  margin-bottom: 170px; /* Agrega un margen inferior igual a la altura de la barra de navegación vertical */
+}
+
+/* Pie de página */
+footer {
+  background-color: #333; /* Color de fondo del pie de página */
+  color: #f7f7f7; /* Color de texto en el pie de página */
+  text-align: center;
+  padding: 10px;
+  width: 100%; /* Ancho completo */
+  position: fixed; /* Fija el pie de página en la parte inferior de la ventana */
+  bottom: 0;
+  z-index: 2;
+}
+.wrapper {
+  margin: 0;
+  margin-bottom: 40px;
+}
+/* Estilos para formularios */
+form {
+  border: 2px solid #0073e6; /* Color del borde del formulario */
+  padding: 20px;
+  background-color: #ffffff; /* Color de fondo del formulario */
+  box-shadow: 0 0 10px rgba(0, 115, 230, 0.3); /* Sombra del formulario */
+  color: #333; /* Color de texto en el formulario */
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333; /* Color de texto secundario en el formulario */
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form input[type="email"] {
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f7f7f7; /* Color de fondo de campos de entrada */
+  border: 2px solid #0073e6; /* Color del borde de campos de entrada */
+}
+
+form button {
+  background-color: #0073e6; /* Color de fondo del botón del formulario */
+  color: white; /* Color de texto en el botón del formulario */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Estilos para imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #0073e6; /* Color del borde de imágenes */
+  box-shadow: 0 0 10px rgba(0, 115, 230, 0.3); /* Sombra del formulario */
+}
+
+/*Tarjetas de texto*/
+/* Estilos para las tarjetas de Visión y Misión */
+.tarjeta {
+  background-color: #ffffff; /* Color de fondo de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  padding: 20px;
+  margin-top: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para el contenido dentro de las tarjetas */
+.tarjeta p {
+  font-size: 24px; /* Tamaño de fuente del contenido */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: #333333; /* Color del texto */
+}
+
+/* Estilos para el título dentro de las tarjetas */
+.tarjeta h2 {
+  font-size: 32px; /* Tamaño de fuente del título */
+  margin-bottom: 10px; /* Espacio entre el título y el contenido */
+  color: #0073e6; /* Color del título */
+}
