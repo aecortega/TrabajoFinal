@@ -220,3 +220,10 @@ img {
   margin-bottom: 10px; /* Espacio entre el título y el contenido */
   color: #0073e6; /* Color del título */
 }
+
+/* Estilos para la imagen del webmaster */
+.webmaster-imagen {
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}

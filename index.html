@@ -10,7 +10,7 @@
 <body>
     <header>
         <img src="images\r1.png" alt="Imagen Izquierda" class="imagen-izquierda">
-        <h1><a href="index.html">Tienda de Ropa</a></h1>
+        <h1><a href="#" onclick="mostrarWebMaster()">Tienda de Ropa</a></h1>
         <img src="images\r2.png" alt="Imagen Derecha" class="imagen-derecha">
     </header>
     
@@ -24,7 +24,6 @@
                 <li><a href="#" onclick="mostrarImagen(5)">Tabla Guias de Envio</a></li>
                 <li><a href="#" onclick="mostrarVision()">Vision</a></li>
                 <li><a href="#" onclick="mostrarMision()">Mision</a></li>
-                <li><a href="#" onclick="mostrarWebMaster()">WebMaster</a></li>
             </ul>
         </nav>
 
@@ -44,22 +43,22 @@
             <form id="formulario1" style="display: none;">
                 <h2>Formulario Usuarios</h2>
                 <label>Nombres:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+                <input type="text" id="nombre" name="nombre" ><br><br>
 
                 <label>Apellidos:</label>
-                <input type="text" id="apellido" name="apellido" required><br><br>
+                <input type="text" id="apellido" name="apellido" ><br><br>
 
                 <label>Numero de Telefono:</label>
-                <input type="number" id="no_telefono" name="no_telefono" required><br><br>
+                <input type="number" id="no_telefono" name="no_telefono" ><br><br>
 
                 <label>Correo:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email" ><br><br>
 
                 <label>Identificacion:</label>
                 <input type="file" id="fotoid" name="foto_id"><br><br>
 
                 <label>Nombre de Usuario:</label>
-                <input type="text" id="n_usuario" name="n_usuario" required><br><br>
+                <input type="text" id="n_usuario" name="n_usuario" ><br><br>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -67,31 +66,31 @@
             <form id="formulario2" style="display: none;">
                 <h2>Formulario Productos</h2>
                 <label>id de Producto:</label>
-                <input type="number" id="id_producto" name="id_producto" required><br><br>
+                <input type="number" id="id_producto" name="id_producto" ><br><br>
 
                 <label>Nombre del Producto:</label>
-                <input type="text" id="n_producto" name="n_producto" required><br><br>
+                <input type="text" id="n_producto" name="n_producto" ><br><br>
 
                 <label>Descripcion:</label>
-                <input type="text" id="descripcion" name="descripcion" required><br><br>
+                <input type="text" id="descripcion" name="descripcion" ><br><br>
 
                 <label>Precio:</label>
-                <input type="number" id="precio" name="precio" required><br><br>
+                <input type="number" id="precio" name="precio" ><br><br>
 
                 <label>talla:</label>
-                <input type="text" id="talla" name="talla" required><br><br>
+                <input type="text" id="talla" name="talla" ><br><br>
 
                 <label>marca:</label>
-                <input type="text" id="marca" name="marca" required><br><br>
+                <input type="text" id="marca" name="marca" ><br><br>
 
                 <label>modelo:</label>
-                <input type="text" id="modelo" name="modelo" required><br><br>
+                <input type="text" id="modelo" name="modelo" ><br><br>
 
                 <label>corte:</label>
-                <input type="text" id="corte" name="corte" required><br><br>
+                <input type="text" id="corte" name="corte" ><br><br>
 
                 <label>color:</label>
-                <input type="text" id="color" name="color" required><br><br>
+                <input type="text" id="color" name="color" ><br><br>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -99,28 +98,28 @@
             <form id="formulario3" style="display: none;">
                 <h2>Formulario Inventarios</h2>
                 <label for="id_producto">ID de Producto:</label>
-                <input type="text" id="id_producto" name="id_producto" required><br><br>
+                <input type="text" id="id_producto" name="id_producto" ><br><br>
 
                 <label for="cantidad_stock">Cantidad en Stock:</label>
-                <input type="number" id="cantidad_stock" name="cantidad_stock" required><br><br>
+                <input type="number" id="cantidad_stock" name="cantidad_stock" ><br><br>
 
                 <label for="n_producto">Nombre del Producto:</label>
-                <input type="text" id="n_producto" name="n_producto" required><br><br>
+                <input type="text" id="n_producto" name="n_producto" ><br><br>
 
                 <label for="tallas_disponibles">Tallas Disponibles:</label>
-                <input type="text" id="tallas_disponibles" name="tallas_disponibles" required><br><br>
+                <input type="text" id="tallas_disponibles" name="tallas_disponibles" ><br><br>
 
                 <label for="n_proveedor">Nombre del Proveedor:</label>
-                <input type="text" id="n_proveedor" name="n_proveedor" required><br><br>
+                <input type="text" id="n_proveedor" name="n_proveedor" ><br><br>
 
                 <label for="precio_p">Precio de Compra:</label>
-                <input type="number" id="precio_p" name="precio_p" required><br><br>
+                <input type="number" id="precio_p" name="precio_p" ><br><br>
 
                 <label for="precio_V">Precio de Venta:</label>
-                <input type="number" id="precio_V" name="precio_V" required><br><br>
+                <input type="number" id="precio_V" name="precio_V" ><br><br>
 
                 <label for="fecha_de_reposicion">Fecha de Reposición:</label>
-                <input type="date" id="fecha_de_reposicion" name="fecha_de_reposicion" required><br><br>
+                <input type="date" id="fecha_de_reposicion" name="fecha_de_reposicion" ><br><br>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -128,28 +127,28 @@
             <form id="formulario4" style="display: none;">
                 <h2>Formulario Inventarios</h2>
                 <label for="n_producto">Nombre de Producto:</label>
-                <input type="text" id="n_producto" name="n_producto" required><br><br>
+                <input type="text" id="n_producto" name="n_producto" ><br><br>
 
                 <label for="no_venta">Número de Venta:</label>
-                <input type="number" id="no_venta" name="no_venta" required><br><br>
+                <input type="number" id="no_venta" name="no_venta" ><br><br>
 
                 <label for="precio_O">Precio Original:</label>
-                <input type="number" id="precio_O" name="precio_O" required><br><br>
+                <input type="number" id="precio_O" name="precio_O" ><br><br>
 
                 <label for="precio_V">Precio de Venta:</label>
-                <input type="number" id="precio_V" name="precio_V" required><br><br>
+                <input type="number" id="precio_V" name="precio_V" ><br><br>
 
                 <label for="precio_P">Precio de Proveedor:</label>
-                <input type="number" id="precio_P" name="precio_P" required><br><br>
+                <input type="number" id="precio_P" name="precio_P" ><br><br>
 
                 <label for="n_envio">Número de Envío:</label>
-                <input type="number" id="n_envio" name="n_envio" required><br><br>
+                <input type="number" id="n_envio" name="n_envio" ><br><br>
 
                 <label for="tipo_de_pago">Tipo de Pago:</label>
-                <input type="text" id="tipo_de_pago" name="tipo_de_pago" required><br><br>
+                <input type="text" id="tipo_de_pago" name="tipo_de_pago" ><br><br>
 
                 <label for="tipo_de_entrega">Tipo de Entrega:</label>
-                <input type="text" id="tipo_de_entrega" name="tipo_de_entrega" required><br><br>
+                <input type="text" id="tipo_de_entrega" name="tipo_de_entrega" ><br><br>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -157,31 +156,31 @@
             <form id="formulario5" style="display: none;">
                 <h2>Formulario Inventarios</h2>
                 <label for="id_producto">ID de Producto:</label>
-                <input type="number" id="id_producto" name="id_producto" required><br><br>
+                <input type="number" id="id_producto" name="id_producto" ><br><br>
 
                 <label for="n_producto">Nombre de Producto:</label>
-                <input type="text" id="n_producto" name="n_producto" required><br><br>
+                <input type="text" id="n_producto" name="n_producto" ><br><br>
 
                 <label for="no_envio">Número de Envío:</label>
-                <input type="number" id="no_envio" name="no_envio" required><br><br>
+                <input type="number" id="no_envio" name="no_envio" ><br><br>
 
                 <label for="no_telefono">Número de Teléfono:</label>
-                <input type="number" id="no_telefono" name="no_telefono" required><br><br>
+                <input type="number" id="no_telefono" name="no_telefono" ><br><br>
 
                 <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" required><br><br>
+                <input type="text" id="direccion" name="direccion" ><br><br>
 
                 <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required><br><br>
+                <input type="email" id="correo" name="correo" ><br><br>
 
                 <label for="nombres">Nombres:</label>
-                <input type="text" id="nombres" name="nombres" required><br><br>
+                <input type="text" id="nombres" name="nombres" ><br><br>
 
                 <label for="n_usuario">Nombre de Usuario:</label>
-                <input type="text" id="n_usuario" name="n_usuario" required><br><br>
+                <input type="text" id="n_usuario" name="n_usuario" ><br><br>
 
                 <label for="precio_de_envio">Precio de Envío:</label>
-                <input type="number" id="precio_de_envio" name="precio_de_envio" required><br><br>
+                <input type="number" id="precio_de_envio" name="precio_de_envio" ><br><br>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -221,6 +220,7 @@
             <section id="webmaster" style="display: none;">
                 <h2>Web Master</h2>
                 <div class="tarjeta">
+                    <img src="images/webmasterAECO.jpeg" alt="Webmaster" class="webmaster-imagen">
                     <p>Cisneros Ortega Angel Eduardo 5J</p>
                 </div>
             </section>
